@@ -13,7 +13,7 @@ I'm a full stack Lead Developer with more than 12 years commercial experience bu
 
 ### Technologies
 
-Technologies I have most experience with include:
+Some of the technologies I have worked with include:
 
 | | |
 |-|-|
@@ -30,11 +30,11 @@ EXFO's Nova Context product uses a large (up to 1TB) in-memory graph database to
 
 ##### Senior Software Engineer / Lead Architect (May 2017 - present)
 
-In the EXFO Nova Context teams, I am one of the most senior developers and the lead architect for the Nova Context product. In this role, I:
+In the EXFO Nova Context teams, I am one of the most senior developers and the lead architect for the Nova Context product. In this role, I have been responsible for:
 
-* **Developed Application Features:** Developed features for both the front- and back-end portions of the Nova Context product, as part of an agile team.
+* **Developing Application Features:** Developed features for both the front- and back-end portions of the Nova Context product, as part of an agile team.
 
-* **Drove Containerization Efforts:** I am currently driving efforts allow the platform to be packaged and deployed into customer datacentres as OCI containers, to allow for easier, machine-agnostic deployments, faster test cycles, and less disruptive upgrades.
+* **Driving Containerization Efforts:** I am currently driving efforts to allow the platform to be packaged and deployed into customer datacentres as OCI containers, to allow for easier, machine-agnostic deployments, faster test cycles, and less disruptive upgrades.
 
 * **Architectural Representative:** As the division's lead architect, I represent the Nova Context teams in an EXFO-wide architectural forum. This involves sharing interesting development and technologies with the rest of EXFO, working with the architectural group to develop new company-wide best practises, and driving adoption of those recommendations where sensible.
 
@@ -46,11 +46,11 @@ In the EXFO Nova Context teams, I am one of the most senior developers and the l
 
 #### Mendeley / Elsevier (2016 - 2017)
 
-Mendeley is an Elseview-owned company that offers social networking and reference citation services for academic researchers.
+Mendeley is an Elsevier-owned company that offers social networking and reference citation services for academic researchers, deployed on AWS infrastructure.
 
 ##### Principal Software Engineer / Technical Lead (May 2016 - May 2017)
 
-During my time at Mendeley, I was the technical lead of the Authentication & Onboarding team. This team was responsible for developing and supporting HA REST APIs and services that provided the Mendeley-wide authentication and authorization mechanisms (based on OAuth), registration and on-boarding of new users, and general account management facilities (forgot password, invitations, etc). As well as providing leadership and mentorship for more junior developers on the team, I:
+During my time at Mendeley, I was the technical lead of the Authentication & Onboarding team. This team was responsible for developing and supporting HA REST APIs and services that provided the Mendeley-wide authentication and authorization mechanisms (based on OAuth), registration and on-boarding of new users, and general account management facilities (forgot password, invitations, etc). As well as providing leadership and mentorship for more junior developers on the team, I was responsible for:
 
  * **Architected SSO Migration:** Led design and worked with the team on developing and implementing a plan for the migration of Mendeley's self-hosted sign-in flow to an Elsevier-managed single sign-in system based on OpenID Connect.
 
