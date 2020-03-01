@@ -12,7 +12,7 @@ jobs:
       - name: Create HTML file from .md
         uses: docker://pandoc/core:2.9
         with:
-          args: "--from markdown --to html --css ./core-styles.css --lua-filter ./pagebreak.lua -o output/index.html --standalone index.md"
+          args: "--from markdown --to html --css ./styles.css --lua-filter ./pagebreak.lua -o output/index.html --standalone index.md"
       - name: Install SSH Client
         uses: webfactory/ssh-agent@v0.2.0
         with:
@@ -23,3 +23,18 @@ jobs:
           SSH: true
           BRANCH: gh-pages
           FOLDER: output
+
+  convert_to_pdf:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v1
+      - name: Create output directory
+        run: mkdir output
+      - name: Create PDF file from .md
+        uses: docker://pandoc/core:2.9
+        with:
+          args: "--from markdown --to pdf -t html --css ./styles.css --lua-filter ./pagebreak.lua -o output/cv.pdf --standalone index.md"
+      - uses: actions/upload-artifact@v1
+        with:
+          name: CV
+          path: output/cv.pdf
