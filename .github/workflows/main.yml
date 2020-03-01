@@ -13,9 +13,13 @@ jobs:
         uses: docker://pandoc/core:2.9
         with:
           args: "--from markdown --to html --css ./core-styles.css --lua-filter ./pagebreak.lua -o output/index.html --standalone index.md"
+      - name: Install SSH Client
+        uses: webfactory/ssh-agent@v0.2.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_DEPLOY_KEY }}
       - name: Deploy to pages branch
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          SSH: true
           BRANCH: gh-pages
           FOLDER: output
