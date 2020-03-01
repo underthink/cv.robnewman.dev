@@ -6,6 +6,9 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-18.04
     steps:
+      - uses: actions/checkout@v1
+      - run: mkdir output && cp core-styles.css output
       - uses: docker://pandoc/core:2.9
         with:
-          args: "--from markdown --to html --css ./core-styles.css --lua-filter ./pagebreak.lua -o foo.html --standalone index.md"
+          args: "--from markdown --to html --css ./core-styles.css --lua-filter ./pagebreak.lua -o output/index.html --standalone index.md"
+      
