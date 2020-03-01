@@ -1,85 +1,94 @@
 # Rob Newman
 
-## Lead Developer
+<div class="header-links">
 
-* [cv@robnewman.dev](mailto:cv@robnewman.dev)
-* [cv.robnewman.dev](https://cv.robnewman.dev/)
-* [github.com/underthink](http://github.com/underthink)
-* [linkedin.com/in/robanewman](http://uk.linkedin.com/in/robanewman)
+[E-Mail](mailto:cv@robnewman.dev) &middot; [GitHub](https://github.com/underthink)
+&middot; [LinkedIn](https://linkedin.com/in/rob-newman-b65299b5) &middot; [CV](http://cv.robnewman.io/)
 
-### About Me
+</div>
 
-I'm a full stack Lead Developer with more than 12 years commercial experience building high-performance, reliable systems handling thousands of transactions a second. I have experience providing technical leadership for an Agile DevOps development team using Kanban and Continuous Deployment to deliver high-quality, maintainable products.
 
-### Technologies
 
-Some of the technologies I have worked with include:
+I'm a lead/senior developer with 12 years experience writing and designing reliable, scalable applications.
+I've written code that correctly handles tens of thousands of operations per second, provided technical 
+leadership and mentorship for agile teams, and worked with other development teams, product teams, and customers
+to make sure the right thing gets built. I have a passion for learning, for solving interesting problems, and 
+for getting the details right.
 
-| | |
-|-|-|
-| **Languages:** | Java 5/6/7/8/11 _(12+ years)_, Python 2/3 _(8 years)_, Javascript _(12+ years)_, Rust _(~1 year)_, _Go (<1 year)_ |
-| **Libraries & Frameworks:** | _Java_: Spring/Spring Boot, Jersey, Jetty, Guice, Wicket, OSGi, JUnit, JMock <br/> _Python_: asyncio, aiohttp, flask, tornado, SQLAlchemy <br/> _Javascript_: Vue.js, AngularJS, React |
-| **Databases:** | _RDBMS_: MySQL, SQLite, PostgreSQL <br/> _Others_: Hadoop/HBase, Elasticsearch, Various RDF-based Graph |
-| **Tools:** |  _Build/Deployment_: Kubernetes, Docker, AWS, Terraform, Ansible<br/> _VCS_: Git (Gitlab, Github, Phabricator), SVN<br/> _CI/CD_: Gitlab, Jenkins<br/> _IDEs:_ IntelliJ IDEA, Eclipse, XCode <br/> |
+## Skills
 
-### Experience
+* Experience writing backends and frontends using **Java 5/6/8/11** _(12 years)_, **Python 2/3** _(10 years)_,
+  **Javascript** _(10 years)_, **Rust** and **Go**. Familiarity with many libraries and frameworks in those 
+  languages, including:
+  * **Spring Boost**, **Dropwizard**, **Netty**, **OSGi** and **Wicket** in Java
+  * **Flask**, **Sanic**, **SQLalchemy** and **Requests** in Python
+  * **vue.js**, **React** and **jQuery** in Javascript
+* Knowledge of RDBMS and SQL (**MySQL**, **PostgreSQL**, **SQLite**), graph databases 
+  (**Sesame/RDF4J**, **Stardog**), indexes (**Elasticsearch**, **Lucene**), big-data 
+  stores (**HBase**, **Hadoop**) and messaging/streaming systems (**Kafka**, **ActiveMQ**)
+* Deployment, operation and management of services on **Kubernetes**, **AWS** (using **Terraform**),
+  **OpenStack** and **bare-metal servers** (**Linux** using **Ansible**)
+* Familiarity with build tools such as **Gradle**, **Maven**, **Buildah**, **setuptools** and **GitLab CI/CD**
 
-#### EXFO Nova Context (2017 - present)
+## Commercial Experience
 
-EXFO's Nova Context product uses a large (up to 1TB) in-memory graph database to allow network operators to infer relationships between essentially any entity or device in a network, drawing from databases, events and unstructured data to build the model.
+### EXFO/Ontology Partners: Nova Context
 
-##### Senior Software Engineer / Lead Architect (May 2017 - present)
+Nova Context is a platform that allows networks and operators to visualize their network topology, using large RDF graph databases to model free-form data.
 
-In the EXFO Nova Context teams, I am one of the most senior developers and the lead architect for the Nova Context product. In this role, I have been responsible for:
+#### 2017 - Present: Senior Developer &amp; Lead Architect
 
-* **Developing Application Features:** Developed features for both the front- and back-end portions of the Nova Context product, as part of an agile team.
+* Acted as local architectural lead, working the with wider EXFO architecture community. In this role, I:
+  * Shared interesting development approaches and technologies used by my teams with the other members of the architectural group
+  * Worked with representatives of other business units to develop a set of recommendations for transitioning to a cloud-native development and deployment approach
+  * Developed and led portions of Kubernetes workshops, introducing concepts like tracing and distributed logging
+  * Ensured local team were aware of wider EXFO architectural strategy and direction, advising and helping with implementation as necessary
+* Developed frontend and backend features, and fixed regressions, with the core big-data graph platform. These included:
+  * Worked with the product team and internal customers to gather requirements for and develop new features.
+  * Re-wrote platform indexing capabilities to injest terabytes of raw data produced by dozens of threads more quickly and with fewer failures
+  * Led evaluation of candidates for a replacement graph datastore. Developed PoC code to benchmark and prove the viability of possible stores.
+  * Led efforts to deploy the platform and dependencies using OCI containers.
+* Developed internal tooling and applications to help with CI and release automation.
 
-* **Driving Containerization Efforts:** I am currently driving efforts to allow the platform to be packaged and deployed into customer datacentres as OCI containers, to allow for easier, machine-agnostic deployments, faster test cycles, and less disruptive upgrades.
+\pagebreak
 
-* **Architectural Representative:** As the division's lead architect, I represent the Nova Context teams in an EXFO-wide architectural forum. This involves sharing interesting development and technologies with the rest of EXFO, working with the architectural group to develop new company-wide best practises, and driving adoption of those recommendations where sensible.
+### Elsevier/Mendeley
 
-* **Worked to Develop Microservice Recommendations:** I am part of a small subset of architects developing and maintaining recommendations and examples for teams looking to move to a more microservice-oriented, Kubernetes-based architecture.
+Mendeley is a researcher-focused citation-management and social networking platform, deployed as 
+a large, continually-tested set of microservices on AWS.
 
-* **Ran K8s Dojos/Workshops:** I ran a workshop with the rest of the architectural group to give people a chance to try putting these recommendations into practice, using an example microservice project and the k3s Kubernetes micro-distributution.
+#### 2016 - 2017: Technical Lead for the Access &amp; Onboarding Team
 
-* **Developed Team Tooling:** As part of the team, I've written a few different tools to automate various parts of the development process, including the release process, running VM-based smoke tests, packaging the application and building a deployable Docker image.
+* Led backend work to migrate users from a legacy internal Mendeley database to a new company-wide OpenID Connect-based authentication platform
+  * Worked with product owners, front end developers and other development teams across Elsevier to design a secure migration process
+  * Developed backend code to securely and correctly migrate accounts between systems 
+  * Ensured critical identity and authorization changes were correctly rolled out to the ~100 other microservices that make up Mendeley's backend
+  * Designed well-defined, stable REST APIs to allow integration with the new security services.
+* Developed infrastructure and tooling to improve Mendeley's AWS-based continuous deployment environment and process
+* Developed backend features to ease sign-up, better integrate systems, and increase security
+* Acted as the technical point-of-contact for the team
+  * Provided advice and guidance to other teams in Mendeley and Elsevier relating to authentication and security implementations.
+  * Worked with the support team to trace issues with user accounts
+* Mentored and advised junior developers on the team
 
-#### Mendeley / Elsevier (2016 - 2017)
+### OpenMarket
 
-Mendeley is an Elsevier-owned company that offers social networking and reference citation services for academic researchers, deployed on AWS infrastructure.
+OpenMarket is a mobile messaging aggregator, allowing enterprises to deliver messages to users in hundreds of countries. The messaging platform is one of the company's core services, responsible for routing and delivering tens of thousands of messages per second in a reliable, auditable way.
 
-##### Principal Software Engineer / Technical Lead (May 2016 - May 2017)
+#### 2007 - 2016: Developer/Technical Lead for the EMEA/APAC Messaging Platform
 
-During my time at Mendeley, I was the technical lead of the Authentication & Onboarding team. This team was responsible for developing and supporting HA REST APIs and services that provided the Mendeley-wide authentication and authorization mechanisms (based on OAuth), registration and on-boarding of new users, and general account management facilities (forgot password, invitations, etc). As well as providing leadership and mentorship for more junior developers on the team, I was responsible for:
+* Designed next-generation SMS routing and delivery platform
+  * The new platform designed to be horizontally-scalable, fault-tolerant across datacentres, and aware of data locality issues. Able to handle up to hundreds of thousands of transactions per second.
+  * Worked with other teams in UK and Seattle to refine the design and develop replacement public-facing RESTful and binary APIs.
+  * Created a deployment plan to allow the new platform to temporarily operate in sync with the old one, avoiding a risky 'big bang' deployment.
+* Core platform development, including:
+  * Re-wrote core connectivity code to use NIO/selector-based networking code, allowing for greatly increased scale
+  * Developed resilient, high-performance integrations with third-party suppliers, using tools like Wireshark to analyse protocols
+  * Developed systems to generate accurate, queryable billing data from immutable event data in near real-time
+* Acted as a mentor to less senior team members
+* Involved in recruiting new developers - this included CV review, interviewing candidates, and selecting the candidate to hire
 
- * **Architected SSO Migration:** Led design and worked with the team on developing and implementing a plan for the migration of Mendeley's self-hosted sign-in flow to an Elsevier-managed single sign-in system based on OpenID Connect.
-
- * **Developed Features:** Worked in an agile environment to deliver features, bug fixes, RESTful APIs and services as part of the authentication and authorization Java backend development team.
-
- * **Acted as a Technical Point Of Contact:** Acted as the technical point-of-contact for the team, providing advice and guidance to other teams in Mendeley and Elsevier relating to authentication and security implementations.
-
-#### OpenMarket (2007 - 2016)
-
-OpenMarket is a mobile aggregator, providing global SMS messaging to enterprise clients. During my time at OpenMarket, I primarily worked on teams that developed and maintained the core messaging platforms and supporting tools.
-
-##### Software Development Manager (Oct 2015 – May 2016):
-
-In 2015-2016, I acted as a development manager for a new development team, which involved line management responsibities, hiring new developers, and working with senior leadership to define priorities for the company-wide SMS platform.
-
-##### Technical Team Lead (Sept 2013 – Oct 2015):
-
-In 2013, I became technical lead of the SMS platform team. In addition to continuing feature development, I took a more active role in mentorship, training and advising more junior developers.
-
-As the platform began to hit scalability limits, I designed and worked with other team members to prototype and develop a replacement system and architecture that would allow it to scale to meet forseeable needs by removing critical bottlenecks and scaling horizontally.
-
-##### Software Developer / Senior Software Developer (July 2007 – Sept 2013):
-
-At OpenMarket, I joined as a Java developer, primarily working on the team that handled development and maintenance of the SMS message routing, delivery and billing platform. This platform was core to the company, processing several thousands to tens of thousands of messaging transactions per second. To achieve these rates, the platform was heavily concurrent, and distributed across machines.
-
-I also acted as a point of contact, providing advice and assistance to both internal teams (technical and non-technical), and externally for a few high-profile, high-traffic customers.
-
-### Education
+## Education
 
 * **University of Warwick (2003-2007):** Graduated with a 2:1 Masters degree in Computer Science
 * **Wisbech Grammar School (1996-2003):** 3 A-Levels, 1 AS Level
-
