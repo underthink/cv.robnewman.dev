@@ -28,18 +28,16 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v1
-      - name: Install wkhtmltopdf
+      - name: Install pandoc and wkhtmltopdf
         run: |
           sudo apt update
-          sudo apt install -y wget fontconfig fontconfig-config fonts-dejavu-core libbsd0 libexpat1 libfontconfig1 libfontenc1 libfreetype6 libjpeg-turbo8 libpng16-16 libx11-6 libx11-data libxau6 libxcb1 libxdmcp6 libxext6 libxrender1 multiarch-support ucf x11-common xfonts-75dpi xfonts-base xfonts-encodings xfonts-utils
+          sudo apt install -y pandoc wget fontconfig fontconfig-config fonts-dejavu-core libbsd0 libexpat1 libfontconfig1 libfontenc1 libfreetype6 libjpeg-turbo8 libpng16-16 libx11-6 libx11-data libxau6 libxcb1 libxdmcp6 libxext6 libxrender1 multiarch-support ucf x11-common xfonts-75dpi xfonts-base xfonts-encodings xfonts-utils
           wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb
           sudo dpkg -i wkhtmltox_0.12.5-1.bionic_amd64.deb
       - name: Create output directory
         run: mkdir output
       - name: Create PDF file from .md
-        uses: docker://pandoc/core:2.9
-        with:
-          args: "--from markdown --to pdf -t html --css ./styles.css --lua-filter ./pagebreak.lua -o output/cv.pdf --standalone index.md"
+        run: pandoc --from markdown --to pdf -t html --css ./styles.css --lua-filter ./pagebreak.lua -o output/cv.pdf --standalone index.md
       - uses: actions/upload-artifact@v1
         with:
           name: CV
