@@ -31,10 +31,9 @@ jobs:
       - name: Install wkhtmltopdf
         run: |
           sudo apt update
-          sudo apt install -y wget
+          sudo apt install -y wget fontconfig fontconfig-config fonts-dejavu-core libbsd0 libexpat1 libfontconfig1 libfontenc1 libfreetype6 libjpeg-turbo8 libpng16-16 libx11-6 libx11-data libxau6 libxcb1 libxdmcp6 libxext6 libxrender1 multiarch-support ucf x11-common xfonts-75dpi xfonts-base xfonts-encodings xfonts-utils
           wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb
           sudo dpkg -i wkhtmltox_0.12.5-1.bionic_amd64.deb
-          sudo apt --fix-broken install
       - name: Create output directory
         run: mkdir output
       - name: Create PDF file from .md
