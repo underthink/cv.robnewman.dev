@@ -8,11 +8,11 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Create output directory
-        run: mkdir output && cp styles.css output
+        run: mkdir output && cp -r r output
       - name: Create HTML file from .md
         uses: docker://pandoc/core:2.9
         with:
-          args: "--from markdown --to html --css ./styles.css --lua-filter ./pagebreak.lua -o output/index.html --standalone index.md"
+          args: "--from markdown --to html --template ./templates/output.html -o output/index.html --standalone index.md"
       - name: Install SSH Client
         uses: webfactory/ssh-agent@v0.2.0
         with:

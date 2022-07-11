@@ -1,94 +1,80 @@
 # Rob Newman
 
-<div class="header-links">
+## Links
 
-[E-Mail](mailto:cv@robnewman.dev) &middot; [GitHub](https://github.com/underthink)
-&middot; [LinkedIn](https://linkedin.com/in/rob-newman-b65299b5) &middot; [CV](http://cv.robnewman.io/)
+ * <a href="mailto:cv@robnewman.dev" class="mail">cv@robnewman.dev</a>
+ * <a href="http://cv.robnewman.io/" class="cv">cv.robnewman.dev</a>
+ * <a href="https://github.com/underthink" class="git">github.com/underthink</a>
 
-</div>
+## Summary
 
-
-
-I'm a lead/senior developer with 12 years experience writing and designing reliable, scalable applications.
+I'm a senior/lead developer with 14 years experience of designing and developing reliable, scalable applications and APIs.
 I've written code that correctly handles tens of thousands of operations per second, provided technical 
-leadership and mentorship for agile teams, and worked with other development teams, product teams, and customers
-to make sure the right thing gets built. I have a passion for learning, for solving interesting problems, and 
-for getting the details right.
+leadership and mentorship for agile teams, and worked with other development teams and organisations, product owners, and customers to make sure the right thing gets built in a maintainable way. 
+I have a passion for learning, for solving interesting problems, and for building things that make people's life better.
 
 ## Skills
 
-* Experience writing backends and frontends using **Java 5/6/8/11** _(12 years)_, **Python 2/3** _(10 years)_,
-  **Javascript** _(10 years)_, **Rust** and **Go**. Familiarity with many libraries and frameworks in those 
+* Experience writing backends (and occasional frontends) using **Python 2/3** _(12 years)_, **Java 5/6/8/11** _(12 years)_ and
+  **Javascript** _(10 years)_; some **Rust** and **Go**. Familiarity with many libraries and frameworks in those 
   languages, including:
-  * **Spring Boost**, **Dropwizard**, **Netty**, **OSGi** and **Wicket** in Java
-  * **Flask**, **Sanic**, **SQLalchemy** and **Requests** in Python
-  * **vue.js**, **React** and **jQuery** in Javascript
-* Knowledge of RDBMS and SQL (**MySQL**, **PostgreSQL**, **SQLite**), graph databases 
-  (**Sesame/RDF4J**, **Stardog**), indexes (**Elasticsearch**, **Lucene**), big-data 
-  stores (**HBase**, **Hadoop**) and messaging/streaming systems (**Kafka**, **ActiveMQ**)
-* Deployment, operation and management of services on **Kubernetes**, **AWS** (using **Terraform**),
+  * **FastAPI/Starlette**, **Flask**, **boto3/aioboto3**, **SQLalchemy** and **Requests** in Python;
+  * **Spring Boost**, **Dropwizard**, **Netty** and **OSGi** in Java
+* Knowledge of RDBMS and SQL (**MySQL**, **PostgreSQL** and **SQLite**), graph databases 
+  (**Sesame/RDF4J**, **Stardog**) and messaging/streaming systems (**SQS**, **Eventbridge**, **Kafka**, **MQTT**)
+* Deployment, operation and management of services on **AWS** (using **Terraform**), **Kubernetes**,
   **OpenStack** and **bare-metal servers** (**Linux** using **Ansible**)
-* Familiarity with build tools such as **Gradle**, **Maven**, **Buildah**, **setuptools** and **GitLab CI/CD**
+* Familiarity with build, packaging and CI/CD tools such as **Poetry**, **Gradle**, **Maven**, **OCI/Docker Containers** and **GitLab CI/CD**.
 
-## Commercial Experience
+## Experience
 
-### EXFO/Ontology Partners: Nova Context
+### Zoopla: Senior Backend Developer &amp; Technical Lead (2020 - present)
 
-Nova Context is a platform that allows networks and operators to visualize their network topology, using large RDF graph databases to model free-form data.
+::::: {.job-skill-list}
+Python 3; PostgreSQL; AWS (including RDS, SQS, ECS, Eventbridge); Golang; RESTful & event-based APIs; Terraform; Perl
+:::::
 
-#### 2017 - Present: Senior Developer &amp; Lead Architect
+* Led a core backend team responsible for providing near-realtime property listing data to Zoopla applications and services (including the zoopla.co.uk property portal)
+  * Provided technical direction and mentorship for the team, and worked with other teams, product owners, and technical leadership to design new features and co-ordinate software development and rollout
+  * Architected migration from a legacy Perl and EC2 customer-facing API to a more scalable, less complex, less expensive, Python-based pipeline
+  * Led efforts to develop new REST and RPC APIs (and document/define SLOs for existing ones), allowing other teams to use datasets our team maintained in a self-serve fashion
+  * Re-developed team Gitlab CI pipelines to allow for faster, more correct automated builds and deployments
+  * Developed and deployed new features and services (particularly in Python); maintained and added capabilities to existing legacy applications (particularly in Golang and Perl)
+   
 
-* Acted as local architectural lead, working the with wider EXFO architecture community. In this role, I:
-  * Shared interesting development approaches and technologies used by my teams with the other members of the architectural group
-  * Worked with representatives of other business units to develop a set of recommendations for transitioning to a cloud-native development and deployment approach
-  * Developed and led portions of Kubernetes workshops, introducing concepts like tracing and distributed logging
-  * Ensured local team were aware of wider EXFO architectural strategy and direction, advising and helping with implementation as necessary
-* Developed frontend and backend features, and fixed regressions, with the core big-data graph platform. These included:
-  * Worked with the product team and internal customers to gather requirements for and develop new features.
+### EXFO/Ontology Partners: Senior Developer &amp; Lead Architect Nova Context (2017 - 2020)
+
+::::: {.job-skill-list}
+Java 8/11, OSGi, RDF4J and Stardog; Kubernetes; Ansible; Terraform; Docker
+:::::
+
+* Acted as architectural lead for my product division, working the with wider EXFO architecture community to define standards and direction.
+  * Worked with representatives of other business units to develop recommendations for transitioning to a cloud-native development and deployment approach
+  * Developed and led portions of cross-team Kubernetes workshops, introducing concepts like tracing and distributed logging
+* Developed frontend and backend product features and improvements for the core Ontology big-data graph platform
   * Re-wrote platform indexing capabilities to injest terabytes of raw data produced by dozens of threads more quickly and with fewer failures
-  * Led evaluation of candidates for a replacement graph datastore. Developed PoC code to benchmark and prove the viability of possible stores.
-  * Led efforts to deploy the platform and dependencies using OCI containers.
-* Developed internal tooling and applications to help with CI and release automation.
+  * Led efforts to deploy the platform and dependencies using OCI containers
 
-\pagebreak
+### Elsevier/Mendeley: Technical Lead for the Access &amp; Onboarding Team (2016 - 2017)
 
-### Elsevier/Mendeley
+::::: {.job-skill-list}
+Java 8; Dropwizard; AWS; Terraform; OpenID; Docker
+:::::
 
-Mendeley is a researcher-focused citation-management and social networking platform, deployed as 
-a large, continually-tested set of microservices on AWS.
+* Led backend work to migrate users from a legacy internal Mendeley database to a new company-wide OpenID Connect-based authentication platform. Worked with product owners, front end developers and other development teams across Elsevier to design a secure migration process
+* Developed backend features to ease sign-up, better integrate disparate microservices, and increase security
+* Acted as the technical point-of-contact for the team, and mentored and advised junior developers
 
-#### 2016 - 2017: Technical Lead for the Access &amp; Onboarding Team
+### OpenMarket: Developer/Technical Lead for the EMEA/APAC Messaging Platform (2007 - 2016)
 
-* Led backend work to migrate users from a legacy internal Mendeley database to a new company-wide OpenID Connect-based authentication platform
-  * Worked with product owners, front end developers and other development teams across Elsevier to design a secure migration process
-  * Developed backend code to securely and correctly migrate accounts between systems 
-  * Ensured critical identity and authorization changes were correctly rolled out to the ~100 other microservices that make up Mendeley's backend
-  * Designed well-defined, stable REST APIs to allow integration with the new security services.
-* Developed infrastructure and tooling to improve Mendeley's AWS-based continuous deployment environment and process
-* Developed backend features to ease sign-up, better integrate systems, and increase security
-* Acted as the technical point-of-contact for the team
-  * Provided advice and guidance to other teams in Mendeley and Elsevier relating to authentication and security implementations.
-  * Worked with the support team to trace issues with user accounts
-* Mentored and advised junior developers on the team
+::::: {.job-skill-list}
+Java 5/6/8; MySQL; HTTP and binary protocols in a variety of formats; bare-metal Linux deployments
+:::::
 
-### OpenMarket
-
-OpenMarket is a mobile messaging aggregator, allowing enterprises to deliver messages to users in hundreds of countries. The messaging platform is one of the company's core services, responsible for routing and delivering tens of thousands of messages per second in a reliable, auditable way.
-
-#### 2007 - 2016: Developer/Technical Lead for the EMEA/APAC Messaging Platform
-
-* Designed next-generation SMS routing and delivery platform
-  * The new platform designed to be horizontally-scalable, fault-tolerant across datacentres, and aware of data locality issues. Able to handle up to hundreds of thousands of transactions per second.
-  * Worked with other teams in UK and Seattle to refine the design and develop replacement public-facing RESTful and binary APIs.
-  * Created a deployment plan to allow the new platform to temporarily operate in sync with the old one, avoiding a risky 'big bang' deployment.
-* Core platform development, including:
-  * Re-wrote core connectivity code to use NIO/selector-based networking code, allowing for greatly increased scale
-  * Developed resilient, high-performance integrations with third-party suppliers, using tools like Wireshark to analyse protocols
-  * Developed systems to generate accurate, queryable billing data from immutable event data in near real-time
-* Acted as a mentor to less senior team members
-* Involved in recruiting new developers - this included CV review, interviewing candidates, and selecting the candidate to hire
+* Archtected and led development of replacement horizontally-scalable SMS routing and delivery platform, able to handle up to hundreds of thousands of transactions per second
+* Worked with other teams in the UK and US to refine the design and develop replacement public-facing RESTful and binary APIs
+* Core platform development, including re-writing core thread- and NIO-based networking code, developing integrations with third-party suppliers, and developing and maintaining the authoratitive billing data source for the platform
 
 ## Education
 
 * **University of Warwick (2003-2007):** Graduated with a 2:1 Masters degree in Computer Science
-* **Wisbech Grammar School (1996-2003):** 3 A-Levels, 1 AS Level
