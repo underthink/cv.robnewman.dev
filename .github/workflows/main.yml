@@ -2,6 +2,9 @@ name: CI
 
 on: [push]
 
+permissions:
+  contents: write
+
 jobs:
   convert_to_html_for_pages:
     runs-on: ubuntu-18.04
@@ -13,13 +16,8 @@ jobs:
         uses: docker://pandoc/core:2.9
         with:
           args: "--from markdown --to html --template ./templates/output.html -o output/index.html --standalone index.md"
-      - name: Install SSH Client
-        uses: webfactory/ssh-agent@v0.2.0
-        with:
-          ssh-private-key: ${{ secrets.SSH_DEPLOY_KEY }}
       - name: Deploy to pages branch
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@releases/v4.3.4
         with:
-          SSH: true
           BRANCH: gh-pages
           FOLDER: output
