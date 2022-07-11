@@ -17,7 +17,6 @@ jobs:
         with:
           args: "--from markdown --to html --template ./templates/output.html -o output/index.html --standalone index.md"
       - name: Deploy to pages branch
-        uses: JamesIves/github-pages-deploy-action@releases/v4.3.4
+        uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
-          BRANCH: gh-pages
           FOLDER: output
