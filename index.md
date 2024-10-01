@@ -3,32 +3,46 @@
 ## Links
 
  * <a href="mailto:cv@robnewman.dev" class="mail">cv@robnewman.dev</a>
- * <a href="http://cv.robnewman.io/" class="cv">cv.robnewman.dev</a>
+ * <a href="http://cv.robnewman.dev/" class="cv">cv.robnewman.dev</a>
  * <a href="https://github.com/underthink" class="git">github.com/underthink</a>
+ * <a href="https://www.linkedin.com/in/rob-newman-b65299b5/" class="linkedin">Rob Newman</a>
 
 ## Summary
 
-I'm a senior/lead developer with 14 years experience of designing and developing reliable, scalable applications and APIs.
+I'm a senior/lead developer with 17 years experience of designing and developing reliable, scalable applications and APIs.
 I've written code that correctly handles tens of thousands of operations per second, provided technical 
 leadership and mentorship for agile teams, and worked with other development teams and organisations, product owners, and customers to make sure the right thing gets built in a maintainable way. 
 I have a passion for learning, for solving interesting problems, and for building things that make people's life better.
 
 ## Skills
 
-* Experience writing backends (and occasional frontends) using **Python 2/3** _(12 years)_, **Java 5/6/8/11** _(12 years)_ and
-  **Javascript** _(10 years)_; some **Rust** and **Go**. Familiarity with many libraries and frameworks in those 
+* Experience writing backends (and occasional frontends) using **Python 2/3** _(16 years)_ and **Java 5/6/8/11** _(12 years)_; some **Rust**, **JavaScript**/**TypeScript**, and **Go**. Familiarity with many libraries and frameworks in those 
   languages, including:
   * **FastAPI/Starlette**, **Flask**, **boto3/aioboto3**, **SQLalchemy** and **Requests** in Python;
-  * **Spring Boost**, **Dropwizard**, **Netty** and **OSGi** in Java
+  * **Spring Boot**, **Dropwizard**, **Netty** and **OSGi** in Java
 * Knowledge of RDBMS and SQL (**MySQL**, **PostgreSQL** and **SQLite**), graph databases 
   (**Sesame/RDF4J**, **Stardog**) and messaging/streaming systems (**SQS**, **Eventbridge**, **Kafka**, **MQTT**)
-* Deployment, operation and management of services on **AWS** (using **Terraform**), **Kubernetes**,
+* Deployment, operation and management of services on **AWS** (both serverless using technologies such as **lambdas** as well as VM-based, using **Terraform**), **Kubernetes**,
   **OpenStack** and **bare-metal servers** (**Linux** using **Ansible**)
 * Familiarity with build, packaging and CI/CD tools such as **Poetry**, **Gradle**, **Maven**, **OCI/Docker Containers** and **GitLab CI/CD**.
 
 ## Experience
 
-### Zoopla: Senior Backend Developer &amp; Technical Lead (2020 - present)
+### Compare the Market: Senior Cloud Platform Engineer (2022 - present)
+
+::::: {.job-skill-list}
+AWS (many services and features, including account provisioning, event-driven serverless APIs and architectures, and IAM roles/permissions); Python 3; Golang; Terraform
+:::::
+
+* One of the more senior members of the Cloud Centre of Excellence team; responsible for:
+  * Re-building large portions of our AWS platform to follow AWS best practices. This allowed other teams within CtM to deploy cloud-native applications and services more quickly, safely, and securely.
+  * Consulting with other internal CtM teams (both within Cloud and the wider product organisation) regarding the best way to use AWS for their use-cases and applications
+  * Maintaining many of CtM's existing operational tools and processes, including the in-house Golang-based deployment tooling
+* Introducted build and deployment strategies to Cloud to allow serverless services and functions to be built in a testable and reproducable way
+* In the process of re-architecting and migrating the company-wide cloud priviledged access service to one that's more secure, reliable and better fits with CtM's needs
+
+
+### Zoopla: Senior Backend Developer &amp; Technical Lead (2020 - 2022)
 
 ::::: {.job-skill-list}
 Python 3; PostgreSQL; AWS (including RDS, SQS, ECS, Eventbridge); Golang; RESTful & event-based APIs; Terraform; Perl
